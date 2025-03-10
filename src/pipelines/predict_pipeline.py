@@ -1,3 +1,5 @@
+# this pipeline is used to provide predictions to the user queries from the web application to the flask API.
+
 import sys
 import os
 import pandas as pd

@@ -1,3 +1,6 @@
+## same file as app.py but with the name changed to application.py for python.config file to recognize it as the entry point
+## for the application to be deployed on the aws container
+
 from flask import Flask, request, render_template
 import numpy as np
 import pandas as pd
@@ -48,4 +51,5 @@ def predict_datapoint():
 
 if __name__=='__main__':
     # it will map to 127.0.0.1 default ip address, default port is 5000
-    app.run(host="0.0.0.0",debug=True)
+    app.run(host="0.0.0.0")
+    # while deploying "deploy = true" should be removed
